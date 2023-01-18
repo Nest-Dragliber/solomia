@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="menu">
+        <h1><a href="#main">A Clockwork Orange game studio</a></h1>
+        <div class="links">
+            <a href="#story">Story</a>
+            <a href="#multichoise">Multichoise</a>
+            <a href="#about">About us</a>
+            <a href="#concepts">Concepts</a>
+        </div>
+        <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+                <a href="#story">
+                    <li>Story</li>
+                </a>
+                <a href="#multichoise">
+                    <li>Multichoise</li>
+                </a>
+                <a href="#about">
+                    <li>About us</li>
+                </a>
+                <a href="#concepts">
+                    <li>Concepts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section id="main" class="main">
+        <div class="content">
+            <h1>SOLOMIA</h1>
+            <div style="width: 400px; justify-content:space-between;" class="row g20">
+                <button>
+                    Buy now
+                </button>
+                <button>
+                    Donate
+                </button>
+            </div>
+            <video src="images/presentation.mp4" controls poster="images/preview.png">
+                Sorry, your browser doesn't support embedded videos,
+                but don't worry, you can <a href="images/presentation.mp4">download it</a>
+                and watch it with your favorite video player!
+            </video>
+        </div>
+    </section>
+    <section id="story" class="story">
+        <div class="content">
+            <div class="g20 col">
+                <h1>Story</h1>
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                    felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section id="multichoise" class="multichoise">
+        <div class="content">
+            <div class="g20 col">
+                <h1>Multichoise</h1>
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                    felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </h3>
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-between; padding-left: 30px; padding-right: 30px;">
+            <h2>Death</h2>
+            <h2>Live</h2>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="content">
+            <div class="g20 col">
+                <h1>Our team:</h1>
+                <ul>
+                    <li style="padding-bottom: 10px;">Team Lead: <p>Jane</p>
+                    </li>
+                    <li style="padding-bottom: 10px;">Character designer: <p>Olga</p>
+                    </li>
+                    <li style="padding-bottom: 10px;">Tech lead: <p>Kate</p>
+                    </li>
+                    <li>Scriptwriter, Producer: <p>Daria</p>
+                    </li>
+                </ul>
+                <h1>Social:</h1>
+                <ul>
+                    <li style="display: inline;"><a href="#"><img src="images/twi.png" /></a></li>
+                    <li style="display: inline;"><a href="#"><img src="images/inst.png" /></a></li>
+                    <li style="display: inline;"><a href="#"><img src="images/steam.png" /></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section id="concepts" class="concepts">
+        <h1>Concepts</h1>
+        <div class="image-mosaic">
+            <div class="card card-tall card-wide" style="background-image: url('images/g1.jpg')"></div>
+            <div class="card card-wide" style="background-image: url('images/g2.png')"></div>
+            <div class="card card-wide card-tall" style="background-image: url('images/g3.jpg')"></div>
+            <div class="card card-wide" style="background-image: url('images/g4.png')"></div>
+            <div class="card card-wide card-tall" style="background-image: url('images/g5.png')"></div>
+            <div class="card card-wide" style="background-image: url('images/g6.jpg')"></div>
+            <div class="card card-wide card-tall" style="background-image: url('images/g7.png')"></div>
+            <div class="card card-wide" style="background-image: url('images/g8.png')"></div>
+        </div>
+    </section>
+</body>
+</body>
+
+</html>

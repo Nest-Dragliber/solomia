@@ -1,0 +1,498 @@
+html{
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(175, 141, 171, 0.3);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+.menu h1 a {
+    font-size: 18px;
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links a {
+    font-size: 16px;
+    font-family: 'Unbounded', sans-serif;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+        url("./images/Donbas.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 60px;
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    /* text-shadow: 0px 0px 10px #F4F4F4; */
+}
+
+.main .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    animation: fadeIn 3s;
+}
+
+.main .content video {
+    width: 400px;
+    -webkit-box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+}
+
+.main button {
+    padding: 10px 20px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+    color: red;
+    border: none;
+    font-size: 20px;
+    font-family: 'Unbounded', sans-serif;
+    cursor: pointer;
+
+    -webkit-box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 94px -12px rgba(0, 0, 0, 0.75);
+}
+
+.main button:hover {
+    opacity: 0.8;
+}
+
+.story {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+        url("./images/Gun.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.story .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 3s;
+}
+
+.story .content h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+}
+
+.story .content h3 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    max-width: 400px;
+    text-align: justify;
+}
+
+.multichoise {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+        url("./images/mulchoise.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.multichoise .content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 3s;
+    padding-left: 30px;
+    align-items: center;
+    padding-top: 80px;
+    animation: fadeIn 3s;
+}
+
+.multichoise .content h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+}
+
+.multichoise .content h3 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    max-width: 400px;
+    text-align: justify;
+}
+
+.multichoise h2 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+}
+
+.concepts {
+    width: 100%;
+    background: black;
+    padding: 20px;
+}
+
+.concepts h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+        url("./images/aboutbg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 3s;
+}
+
+.about .content h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+}
+
+.about .content li {
+    font-family: 'Unbounded', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+}
+.about .content li p {
+    color: white;
+   margin-left: 15px;
+}
+
+.about .content ul {
+    list-style-type: none;
+}
+
+.about img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    margin-right: 10px;
+}
+
+.about img:hover {
+    opacity: 0.8;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.g20 {
+    gap: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-mosaic {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+
+ #menuToggle
+{
+  display: none;
+  position: relative;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  top: -30px;
+  right: -50px;
+  padding: 25px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: 'Unbounded', sans-serif;
+    color: black;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .links {
+     display: none;
+    }
+ 
+    .menu h1 a{
+     font-size: 14px;
+    }
+
+    .main .content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main .content video {
+        width: 100%;
+    }
+    .main .content div {
+        width: 100% !important;
+       flex-direction: column;
+    }
+    .main button{
+        width: 100%;
+    }
+
+    .story .content {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .multichoise .content {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+    }
+
+    .about {
+        padding-left: 0px;
+    }
+    .about .content {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #menuToggle{
+        display: block;
+    }
+ }
