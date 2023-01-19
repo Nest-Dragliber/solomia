@@ -59,8 +59,8 @@ a:hover{
 }
 
 .main h1 {
-    font-size: 60px;
-    font-family: 'Unbounded', sans-serif;
+    font-size: 92px;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
     /* text-shadow: 0px 0px 10px #F4F4F4; */
 }
@@ -87,8 +87,8 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F4F4F4;
-    color: red;
+    background-color: rgba(175, 141, 171, 0.3);
+    color: rgb(238, 238, 238);
     border: none;
     font-size: 20px;
     font-family: 'Unbounded', sans-serif;
@@ -145,7 +145,6 @@ a:hover{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 30px;
 }
 
@@ -169,7 +168,9 @@ a:hover{
     font-family: 'Unbounded', sans-serif;
     color: white;
     max-width: 400px;
-    text-align: justify;
+    /*text-align: justify;*/
+    text-justify: auto;
+
 }
 
 .multichoise h2 {
@@ -477,6 +478,9 @@ a:hover{
         padding-right: 30px;
     }
 
+    .multichoise{
+        justify-content: flex-end;
+    }
     .multichoise .content {
         width: 100%;
         padding-left: 30px;
