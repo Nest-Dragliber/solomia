@@ -317,14 +317,14 @@ a:hover{
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
+  color: #e7e7e7;
   
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -418,7 +418,7 @@ a:hover{
   right: -50px;
   padding: 25px;
   
-  background: #ededed;
+  background: rgba(175, 141, 171, 0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -434,7 +434,7 @@ a:hover{
   padding: 10px 0;
   font-size: 22px;
   font-family: 'Unbounded', sans-serif;
-    color: black;
+    color: rgb(243, 243, 243);
 }
 
 /*
